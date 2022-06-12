@@ -15,8 +15,8 @@ OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
     if tostring(string.lower(NameCallMethod)) == "kick" then
         if getgenv().SendNotifications == true then
             game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Exunys Developer",
-                Text = "You almost got kicked! Successfully prevented.",
+                Title = "Brutal X",
+                Text = "Kick Successfully Blocked",
                 Icon = "rbxassetid://6238540373",
                 Duration = 3,
             })
@@ -30,7 +30,7 @@ end)
 
 if getgenv().SendNotifications == true then
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Exunys Developer",
+        Title = "Brutal X",
         Text = "Anti-Kick script loaded",
         Icon = "rbxassetid://6238537240",
         Duration = 5,
